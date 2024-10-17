@@ -1,0 +1,53 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>PassengerCounter</title>
+    <style>
+      
+        body {
+            font-family: Arial, sans-serif;
+            background-color: #f0f0f0; 
+            
+        }
+        
+        h1 {
+            color: #333; 
+            margin-bottom: 10px;
+        }
+        
+        input[type="button"] {
+            padding: 10px 20px;
+            border: none;
+            border-radius: 5px;
+            background-color: #99e49b; 
+            color: #fff;
+            cursor: pointer;
+            
+        }
+        
+        input[type="button"]:hover {
+            background-color: #74b176; 
+        }
+        
+        #output-area, #Enteries {
+            font-size: 24px;
+            font-weight: bold;
+            color: #666; 
+        }
+    </style>
+</head>
+<body>
+    <h1>People Entered:
+        <span id="output-area">0</span>
+    </h1>
+    <input type="button" value="Increment" onclick="button1()" />
+    <input type="button" value="Save" onclick="button2()" />
+    <input type="button" value="Reset" onclick="button3()" />
+    <h1>Previous Enteries:
+        <span id="Enteries"></span>
+    </h1>
+    <script src="index.js"></script>
+</body>
+</html>
